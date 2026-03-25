@@ -197,7 +197,10 @@ export default function ServicesPage() {
                         ></i>
                         {s.doctors} Specialists
                       </span>
-                      <Link href="/appointment" className={styles.learnLink}>
+                      <Link
+                        href="/page/Appointment"
+                        className={styles.learnLink}
+                      >
                         Book Now <i className="bi bi-arrow-right"></i>
                       </Link>
                     </div>

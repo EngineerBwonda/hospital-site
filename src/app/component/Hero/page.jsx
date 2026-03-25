@@ -1,4 +1,5 @@
 import styles from "./style.module.css";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -29,14 +30,14 @@ export default function Hero() {
               </p>
 
               <div className={styles.heroCta}>
-                <a href="#appointment" className="btn-primary-custom">
+                <Link href="/page/Appointment" className="btn-primary-custom">
                   <i className="bi bi-calendar-check me-2"></i>
                   Book Appointment
-                </a>
-                <a href="#services" className="btn-cream">
+                </Link>
+                <Link href="#services" className="btn-cream">
                   <i className="bi bi-play-circle me-2"></i>
                   Our Services
-                </a>
+                </Link>
               </div>
 
               <div className={styles.heroStats}>

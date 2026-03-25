@@ -1,4 +1,5 @@
 import styles from "./style.module.css";
+import Link from "next/link";
 
 const services = [
   {
@@ -87,9 +88,9 @@ export default function Services() {
                 </div>
                 <h3 className={styles.cardTitle}>{s.title}</h3>
                 <p className={styles.cardDesc}>{s.desc}</p>
-                <a href="#" className={styles.cardLink}>
+                <Link href="/page/Appointment" className={styles.cardLink}>
                   Learn more <i className="bi bi-arrow-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           ))}

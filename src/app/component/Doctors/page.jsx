@@ -1,4 +1,5 @@
 import styles from "./style.module.css";
+import Link from "next/link";
 
 const doctors = [
   {
@@ -80,9 +81,12 @@ export default function Doctors() {
                       {doc.rating}
                     </span>
                   </div>
-                  <a href="#appointment" className={styles.bookBtn}>
+                  {/* <a href="#appointment" className={styles.bookBtn}>
                     Book Consultation
-                  </a>
+                  </a> */}
+                  <Link href="/page/Doctors" className={styles.bookBtn}>
+                    Book Consultation
+                  </Link>
                 </div>
               </div>
             </div>

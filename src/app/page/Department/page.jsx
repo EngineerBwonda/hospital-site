@@ -211,10 +211,16 @@ export default function DepartmentsPage() {
                     </div>
 
                     <div className={styles.deptFoot}>
-                      <Link href="/appointment" className={styles.btnPrimary}>
+                      <Link
+                        href="/page/Appointment"
+                        className={styles.btnPrimary}
+                      >
                         Book Appointment
                       </Link>
-                      <Link href="/doctors" className={styles.btnSecondary}>
+                      <Link
+                        href="/page/Doctors"
+                        className={styles.btnSecondary}
+                      >
                         Our Doctors
                       </Link>
                     </div>

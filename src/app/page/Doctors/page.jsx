@@ -195,7 +195,10 @@ export default function DoctorsPage() {
                         ))}
                       </div>
                       <div className={styles.actions}>
-                        <Link href="/appointment" className={styles.btnBook}>
+                        <Link
+                          href="/page/Appointment"
+                          className={styles.btnBook}
+                        >
                           Book Appointment
                         </Link>
                         <a href="#" className={styles.btnProfile}>
