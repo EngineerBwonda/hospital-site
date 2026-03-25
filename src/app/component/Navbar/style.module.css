@@ -83,6 +83,12 @@
   background: var(--blue-pale);
 }
 
+.activeLink {
+  color: var(--blue-mid);
+  background: var(--blue-pale);
+  font-weight: 700;
+}
+
 .emergencyBadge {
   background: #e53935;
   color: #fff;
