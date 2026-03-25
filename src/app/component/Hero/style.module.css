@@ -1,0 +1,277 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(
+    160deg,
+    var(--blue-deep) 0%,
+    var(--blue-mid) 55%,
+    #1976d2 100%
+  );
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 90px;
+}
+
+.heroPattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(255, 255, 255, 0.04) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 255, 255, 0.06) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 60% 80%,
+      rgba(200, 151, 58, 0.08) 0%,
+      transparent 40%
+    );
+  pointer-events: none;
+}
+
+.heroGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding: 4rem 0;
+}
+
+.heroLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(200, 151, 58, 0.15);
+  border: 1px solid rgba(200, 151, 58, 0.3);
+  color: var(--gold-light);
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.heroTitle {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.heroTitleAccent {
+  color: var(--gold-light);
+  display: block;
+}
+
+.heroDesc {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.7;
+  max-width: 500px;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.heroCta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.heroStats {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.statItem {
+}
+
+.statNumber {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  margin-top: 0.3rem;
+  letter-spacing: 0.03em;
+}
+
+/* Hero image/card side */
+.heroRight {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroCard {
+  background: rgba(253, 248, 240, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  width: 100%;
+  max-width: 380px;
+}
+
+.cardTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.appointmentForm {
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formLabel {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.formControl {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  color: var(--white);
+  font-size: 0.9rem;
+  transition: border-color 0.2s;
+  font-family: "DM Sans", sans-serif;
+  outline: none;
+}
+
+.formControl::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.formControl:focus {
+  border-color: var(--gold-light);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.formControl option {
+  background: var(--blue-deep);
+  color: var(--white);
+}
+
+.submitBtn {
+  width: 100%;
+  background: var(--gold);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 0.5rem;
+}
+
+.submitBtn:hover {
+  background: #b8872a;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(200, 151, 58, 0.4);
+}
+
+/* Floating badges */
+.floatingBadge {
+  position: absolute;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  animation: float 4s ease-in-out infinite;
+}
+
+.floatingBadge:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+.floatingBadge1 {
+  top: 15%;
+  right: -20px;
+}
+
+.floatingBadge2 {
+  bottom: 20%;
+  left: -20px;
+}
+
+.badgeIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.badgeIconBlue {
+  background: var(--blue-pale);
+  color: var(--blue-mid);
+}
+.badgeIconGold {
+  background: #fff8e8;
+  color: var(--gold);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

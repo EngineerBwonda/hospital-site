@@ -1,0 +1,251 @@
+.section {
+  padding: 5rem 0;
+}
+
+/* Mission / Vision / Values */
+.missionSection {
+  background: var(--cream);
+}
+
+.missionCard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2rem;
+  height: 100%;
+  border: 1px solid rgba(187, 222, 251, 0.4);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.missionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.missionIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.missionTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--blue-deep);
+  margin-bottom: 0.65rem;
+}
+
+.missionDesc {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+/* Story section */
+.storySection {
+  background: var(--cream-warm);
+}
+
+.storyBody {
+}
+
+.storyLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.storyTitle {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  color: var(--blue-deep);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.storyText {
+  font-size: 0.97rem;
+  color: var(--text-mid);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.milestones {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.milestone {
+  display: flex;
+  gap: 1.25rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.milestone::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  bottom: 0;
+  width: 2px;
+  background: var(--blue-light);
+}
+
+.milestone:last-child::before {
+  display: none;
+}
+
+.msDot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--blue-pale);
+  border: 3px solid var(--blue-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--blue-mid);
+  flex-shrink: 0;
+}
+
+.msYear {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 0.2rem;
+}
+.msText {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+
+/* Stats strip */
+.statsStrip {
+  background: linear-gradient(135deg, var(--blue-deep), var(--blue-mid));
+  padding: 4rem 0;
+}
+
+.statItem {
+  text-align: center;
+}
+.statNum {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+}
+.statLabel {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 0.5rem;
+}
+
+/* Awards */
+.awardsSection {
+  background: var(--cream);
+}
+
+.awardCard {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  border: 1px solid rgba(187, 222, 251, 0.4);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: transform 0.3s;
+}
+
+.awardCard:hover {
+  transform: translateY(-4px);
+}
+
+.awardIcon {
+  width: 48px;
+  height: 48px;
+  background: #fff8e1;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.awardTitle {
+  font-weight: 600;
+  color: var(--blue-deep);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+.awardYear {
+  font-size: 0.8rem;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+.awardDesc {
+  font-size: 0.83rem;
+  color: var(--text-soft);
+  line-height: 1.55;
+}
+
+/* Values */
+.valuesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.valueItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid rgba(187, 222, 251, 0.4);
+}
+
+.valueDot {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.valueName {
+  font-weight: 600;
+  color: var(--blue-deep);
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+.valueDesc {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  line-height: 1.55;
+}

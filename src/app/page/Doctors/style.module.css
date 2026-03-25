@@ -1,0 +1,221 @@
+.section {
+  padding: 5rem 0;
+  background: var(--cream);
+}
+
+.searchBar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 220px;
+  background: var(--white);
+  border: 1.5px solid var(--blue-light);
+  border-radius: 50px;
+  padding: 0.75rem 1.4rem 0.75rem 3rem;
+  font-size: 0.92rem;
+  color: var(--text-dark);
+  font-family: "DM Sans", sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  border-color: var(--blue-mid);
+}
+
+.searchWrap {
+  position: relative;
+  flex: 1;
+  min-width: 220px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-soft);
+  font-size: 1rem;
+}
+
+.filterSelect {
+  background: var(--white);
+  border: 1.5px solid var(--blue-light);
+  border-radius: 50px;
+  padding: 0.75rem 1.4rem;
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  font-family: "DM Sans", sans-serif;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.filterSelect:focus {
+  border-color: var(--blue-mid);
+}
+
+/* Doctor card */
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(187, 222, 251, 0.35);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.35s;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.avatarArea {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  position: relative;
+}
+
+.availBadge {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  background: var(--white);
+  border-radius: 50px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #2e7d32;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #43a047;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(67, 160, 71, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(67, 160, 71, 0);
+  }
+}
+
+.body {
+  padding: 1.5rem;
+}
+
+.name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--blue-deep);
+  margin-bottom: 0.2rem;
+}
+
+.specialty {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--blue-mid);
+  margin-bottom: 0.9rem;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.metaItem {
+  font-size: 0.82rem;
+  color: var(--text-soft);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.bio {
+  font-size: 0.87rem;
+  color: var(--text-soft);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1.4rem;
+}
+
+.tag {
+  background: var(--blue-pale);
+  color: var(--blue-mid);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.2rem 0.65rem;
+  border-radius: 50px;
+}
+
+.actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.btnBook {
+  flex: 1;
+  background: linear-gradient(135deg, var(--blue-mid), var(--blue-bright));
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: 0.65rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.btnBook:hover {
+  opacity: 0.88;
+  color: var(--white);
+}
+
+.btnProfile {
+  background: var(--blue-pale);
+  color: var(--blue-mid);
+  border: none;
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s;
+}
+
+.btnProfile:hover {
+  background: var(--blue-light);
+}
